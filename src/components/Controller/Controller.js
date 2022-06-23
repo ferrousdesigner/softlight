@@ -2,26 +2,31 @@ import React, { useState } from "react";
 import "./Controller.css";
 const Controller = () => {
   const [control, setControl] = useState("");
-  const [degree, setDegree] = useState("45deg");
+  const [degree, setDegree] = useState("45");
   const [brightness, setBrightness] = useState("50");
-  const [primaryIntensity, setPrimaryIntensity] = useState("50");
-  const [secIntensity, setSecIntensity] = useState("50");
+  const [primaryIntensity, setPrimaryIntensity] = useState("100");
+  const [secIntensity, setSecIntensity] = useState("20");
   const [primaryColor, setPrimaryColor] = useState("#ff0000");
-  const [secColor, setSecColor] = useState("#ff00ff");
-  const [mode, setMode] = useState("Mono");
+  const [secColor, setSecColor] = useState("#006eff");
+  const [mode, setMode] = useState("Gradient");
+  const [active, setActive] = useState(true)
   return (
     <div>
       <div className="softlight-back" />
-      <div className="softlight-front" style={{ opacity: brightness / 100 }} />
-      <div className="softlight-light-panel">
+      <div
+        className="softlight-front"
+        onClick={() => setActive(!active)}
+        style={{ opacity: brightness / 100 }}
+      />
+      <div className={"softlight-light-panel "}>
         <div
           className="primary"
           style={{
             backgroundImage:
               mode === "Gradient"
                 ? `linear-gradient(${degree}deg, ${primaryColor}, ${secColor})`
-                : null,
-            backgroundColor: primaryColor,
+                : `linear-gradient(${degree}deg, ${primaryColor}, ${primaryColor})`,
+            // backgroundColor: primaryColor,
             width: mode === "Dual" ? "50%" : "100%",
             opacity: primaryIntensity / 100,
           }}
@@ -33,7 +38,7 @@ const Controller = () => {
           />
         )}
       </div>
-      <div className="softlight-controller">
+      <div className={"softlight-controller " + (active ? "active" : "")}>
         {!control && (
           <div>
             <button
@@ -59,15 +64,7 @@ const Controller = () => {
             <button
               className="softlight-button"
               style={{ marginRight: 10 }}
-              onClick={() =>
-                setMode(
-                  mode === "Mono"
-                    ? "Dual"
-                    : mode === "Dual"
-                    ? "Gradient"
-                    : "Mono"
-                )
-              }
+              onClick={() => setMode(mode === "Mono" ? "Gradient" : "Mono")}
             >
               Mode: {mode}
             </button>
