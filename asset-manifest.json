@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/softlight/static/css/main.8ac7fc52.chunk.css",
-    "main.js": "/softlight/static/js/main.1b43d9e1.chunk.js",
-    "main.js.map": "/softlight/static/js/main.1b43d9e1.chunk.js.map",
+    "main.css": "/softlight/static/css/main.dd173994.chunk.css",
+    "main.js": "/softlight/static/js/main.55827501.chunk.js",
+    "main.js.map": "/softlight/static/js/main.55827501.chunk.js.map",
     "runtime-main.js": "/softlight/static/js/runtime-main.0e8b567a.js",
     "runtime-main.js.map": "/softlight/static/js/runtime-main.0e8b567a.js.map",
     "static/js/2.9193ccff.chunk.js": "/softlight/static/js/2.9193ccff.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.ab3d3b65.chunk.js": "/softlight/static/js/3.ab3d3b65.chunk.js",
     "static/js/3.ab3d3b65.chunk.js.map": "/softlight/static/js/3.ab3d3b65.chunk.js.map",
     "index.html": "/softlight/index.html",
-    "static/css/main.8ac7fc52.chunk.css.map": "/softlight/static/css/main.8ac7fc52.chunk.css.map",
+    "static/css/main.dd173994.chunk.css.map": "/softlight/static/css/main.dd173994.chunk.css.map",
     "static/js/2.9193ccff.chunk.js.LICENSE.txt": "/softlight/static/js/2.9193ccff.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/softlight/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.0e8b567a.js",
     "static/js/2.9193ccff.chunk.js",
-    "static/css/main.8ac7fc52.chunk.css",
-    "static/js/main.1b43d9e1.chunk.js"
+    "static/css/main.dd173994.chunk.css",
+    "static/js/main.55827501.chunk.js"
   ]
 }
