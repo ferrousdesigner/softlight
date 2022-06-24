@@ -53,11 +53,11 @@ button:focus {
   z-index: 5;
   height: auto;
   background: #ffffff99;
-  padding: 1rem;
+  padding: 1rem 1rem 1.5rem;
   border-radius: 40px 40px 0 0;
   transform: translateX(-50%);
   box-shadow: 0 5px 16px rgb(0 0 0 / 10%);
-  opacity: 0.01;
+  opacity: 0.03;
   transition: all 0.4s ease;
   backdrop-filter: blur(10px);
 }
@@ -185,12 +185,12 @@ header {
   color: white;
   opacity: 0;
 }
-header:hover {
+header.active {
   opacity: 1;
 }
 header h3 {
   margin: 0;
-  margin-top: 38px;
+  margin-top: 45px;
   /* font-family: "Caveat", cursive; */
   color: rgba(255, 255, 255, 0.627);
   letter-spacing: 6px;

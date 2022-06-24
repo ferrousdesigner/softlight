@@ -12,6 +12,10 @@ const Controller = () => {
   const [active, setActive] = useState(true)
   return (
     <div>
+      <header className={active ? 'active' : ''}>
+        <h3>SoftLight</h3>
+        <p>Designed By Ferrous Designer</p>
+      </header>
       <div className="softlight-back" />
       <div
         className="softlight-front"
